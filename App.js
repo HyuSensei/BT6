@@ -3,18 +3,13 @@ import { StyleSheet, Text, View, Image , TextInput} from 'react-native';
 import Intro from './wellcome/intro';
 import Signup from './wellcome/signup';
 import Signin from './wellcome/signin';
+import MainNavigator from './wellcome/nav';
 export default function App() {
   return (
-    <View>
-      <Intro/>
-      <Signup/>
-      <Signin/>
-      <StatusBar style="auto" />
-
-    </View>
+    <MainNavigator></MainNavigator>
+   
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
