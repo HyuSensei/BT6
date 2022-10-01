@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import { 
-    Text, View, Image, StyleSheet, TextInput
+    Text, View, Image, StyleSheet, TextInput,TouchableOpacity
 
 } from 'react-native'
-import { TouchableOpacity } from 'react-native-web';
 
-export default class Intro extends Component {
-  render() {
-    const {navigation} = this.props
+
+const Intro=({navigation})=>{
     return (
       <View style={styles.container}>
-        <Text style={{color: '#5FDFFA', fontWeight: 'bold', fontSize: 20, marginBottom: 50, marginTop: 100}}>WELLCOME TO MY APP</Text>
+        <Text style={{color: '#5FDFFA', fontWeight: 'bold', fontSize: 20, marginBottom: 50, marginTop: 100}}>WELLCOME</Text>
         <Image
             style={styles.tinyLogo}
             source={require('./img/brg.png')}
@@ -30,7 +28,6 @@ export default class Intro extends Component {
       </View>
     )
   }
-}
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -62,3 +59,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     }
   });
+  export default Intro;
